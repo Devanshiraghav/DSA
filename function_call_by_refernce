@@ -1,0 +1,15 @@
+//only in c++
+#include<stdio.h>
+int swap(int &x,int &y){// formal parameter pointers form
+    int temp;
+    temp= x;
+    x=y;
+    y=temp;
+    
+    
+}
+int main(){
+    int a=10;int b=9 ;
+    swap(&a,&b);//actual parameter mai address dalna hai 
+    printf("%d%d",a,b);
+}

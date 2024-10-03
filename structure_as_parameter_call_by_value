@@ -1,0 +1,15 @@
+#include<stdio.h>
+struct rectangle{
+    int length;
+    int breadth;
+};
+fun(struct rectangle r){
+    r.length =30;
+     printf("%d\n",r.length);
+}
+int main()
+{
+    struct rectangle r={10,5};
+    fun(r);
+    printf("%d",r.length);
+}

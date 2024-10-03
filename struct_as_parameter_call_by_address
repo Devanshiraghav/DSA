@@ -1,0 +1,15 @@
+#include<stdio.h>
+struct rectangle{
+    int length;
+    int breadth;
+};
+fun(struct rectangle * p){
+    p->length =30;
+     printf("%d\n",p->length);
+}
+int main()
+{
+    struct rectangle r={10,5};//value will change as we are using call by address
+    fun(&r);
+    printf("%d",r.length);
+}
